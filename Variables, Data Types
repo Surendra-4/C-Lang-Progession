@@ -1,0 +1,95 @@
+Program 1 : Program to print Hello World
+
+# include <stdio.h>
+int main (){
+printf("Hello, World! \n");
+return 0;
+}
+
+OUPUT : Hello, World!
+
+
+
+Program 2 : Testing different data types
+
+#include <stdio.h>
+
+int main (){
+int age = 19;
+float pi = 3.14;
+char symbol = '*';
+
+printf("Age is %d \n", age);
+printf("Value of Pi %f \n", pi);
+printf("Symbol is %c \n", symbol);
+
+return 0;
+}
+
+
+
+Program 3 : Testing scanf function
+
+#include <stdio.h>
+
+int main (){
+int age;
+
+printf("Please enter your age : ");
+scanf("%d",&age);
+printf("Your age is %d", age);
+
+return 0;
+}
+
+
+
+Program 4 : To find the sum of two numbers
+
+#include <stdio.h>
+
+int main (){
+int a,b;
+
+printf("Enter the first number : ");
+scanf("%d",&a);
+
+printf("Enter the second number : ");
+scanf("%d",&b);
+
+printf("Sum of the two numbers is %d", a+b);
+return 0;
+}
+
+
+
+
+Program 5 : To find the area of a square
+
+#include <stdio.h>
+
+int main (){
+int side;
+printf("Enter the value of side : ");
+scanf("%d",&side);
+
+printf("Area of the square is %d", side*side);
+return 0;
+}
+
+
+
+
+Program 6 : To find the area of a circle
+
+#include <stdio.h>
+
+int main (){
+
+float rad;
+printf("Enter the value of radius : ");
+scanf("%f",&rad);
+
+printf("Area of the circle is %f", 3.14 * rad * rad);
+return 0;
+}
