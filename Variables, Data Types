@@ -19,7 +19,7 @@ float pi = 3.14;
 char symbol = '*';
 
 printf("Age is %d \n", age);
-printf("Value of Pi %f \n", pi);
+printf("Value of Pi is %f \n", pi);
 printf("Symbol is %c \n", symbol);
 
 return 0;
@@ -121,10 +121,10 @@ Program 8: To find the cube of a number
 #include <stdio.h>
 
 int main (){
-    int side;
-    printf("Enter the value of side : ");
-    scanf("%d",&side);
+    int num;
+    printf("Enter a number : ");
+    scanf("%d",&num);
     
-    printf("The cube of the number is %d", side*side*side);
+    printf("The cube of the number is %d", num*num*num);
     return 0;
 }
