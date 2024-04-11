@@ -1,0 +1,194 @@
+Program 1: To check if an individual is an adult (Using if else)
+
+
+#include <stdio.h>
+
+int main() {
+    int age;
+    
+    printf("Enter your age : ");
+    scanf("%d",&age);
+    
+    if(age>=18){
+        printf("You are an adult");
+    } else {
+        printf("You are not an adult");
+    }
+}
+
+
+
+
+Program 2: Program to check if an individual is an adult, teenager oor child (Using else is)
+
+
+#include <stdio.h>
+
+int main(){
+    int age;
+    printf("Enter your age : ");
+    scanf("%d",&age);
+    
+    if (age >= 18){
+        printf("You are an adult");
+    } else if (age>=13 && age<=17){
+        printf("You are a teenager");
+    } else if (age<13){
+        printf("You are a child");
+    }
+}
+
+
+
+
+Program 3: Simplifying the above code using Ternary Operator
+
+
+#include <stdio.h>
+
+int main(){
+    int age;
+    printf("Please enter your age : ");
+    scanf("%d",&age);
+    
+    age >=18 ? printf("You are an adult") : printf("You are a child");
+ }
+
+
+
+
+Program 4: Program to accept a day number and display its equivalent day name using Switch Case Statement
+
+
+#include <stdio.h>
+
+int main(){
+    int dayNumber;
+    
+    printf("Please enter the Day Number (1-7) : ");
+    scanf("%d",&dayNumber);
+    
+    switch(dayNumber){
+    case 1 :
+        printf("Monday");
+        break;
+    case 2 :
+        printf("Tuesday");
+        break;
+    case 3 :
+        printf("Wednesday");
+        break;
+    case 4 :
+        printf("Thursday");
+        break;
+    case 5 :
+        printf("Friday");
+        break;
+    case 6 :
+        printf("Saturday");
+        break;
+    case 7 :
+        printf("Sunday");
+        break;
+    default :
+        printf("Not a valid Day Number");
+    }
+}
+
+
+
+
+Program 5: Program to test positive numbers and odd/even using nested if conditions
+
+#include <stdio.h>
+
+int main(){
+    int number;
+    
+    printf("Enter a number : ");
+    scanf("%d",&number);
+    
+    if (number >=0){
+        printf("Given number is positive \n");
+        if (number % 2 == 0){
+            printf("Given number is even \n");
+        } else {
+            printf("GIven number is odd \n");
+        }
+    } else {
+        printf("Given number is negative");
+    }
+}
+
+
+
+
+Program 6: Program to check result of a student
+
+
+#include <stdio.h>
+
+int main(){
+    int marks;
+    
+    printf("Enter your marks : ");
+    scanf("%d",&marks);
+    
+    if(marks>=0 && marks<=30){
+        printf("You have failed");
+    } else if (marks>30 && marks<=100){
+        printf("You have passed");
+    } else {
+        printf("Invalid score");
+    }
+}
+
+
+
+
+Program 7: Program to grade students
+
+
+#include <stdio.h>
+
+int main(){
+    int marks;
+    
+    printf("Enter your marks : ");
+    scanf("%d",&marks);
+    
+    if (marks >= 0 && marks < 30){
+        printf("You have scored a grade of C");
+    } else if (marks >= 30 && marks < 70){
+        printf("You have scored a grade of B");
+    } else if (marks >=70 && marks < 90){
+        printf("You have scored a grade of A");
+    } else if (marks >= 90 && marks <= 100){
+        printf("You have scored a grade of A+");
+    } else {
+        printf("Please enter your valid marks");
+    }
+}
+
+
+
+
+Program 8 : Program to check if a character is uppercase or lowercase
+
+
+#include <stdio.h>
+
+int main(){
+    char ch;
+    
+    printf("Enter the character : ");
+    scanf("%c",&ch);
+    
+    if (ch >= 'a' && ch <= 'z'){
+        printf("Given character is lowercase");
+    } else if (ch >= 'A' && ch <= 'Z'){
+        printf("Given character is uppercase");
+    } else {
+        printf("Please enter a valid letter");
+    }
+}
