@@ -1,0 +1,335 @@
+Program 1: Program to print Hello World 5 times using loop
+
+
+#include <stdio.h>
+
+int main(){
+    for(int i=1;i<=5;i++){
+        printf("Hello, World! \n");
+    }
+}
+
+
+
+Program 2: Program to print 0 - 10 numbers
+
+
+#include <stdio.h>
+
+int main(){
+    for(int i = 0; i <= 10; i++){
+        printf("%d \n",i);
+    }
+}
+
+
+
+
+
+Program 3: Program to print n numbers
+
+
+#include <stdio.h>
+
+int main(){
+    int n;
+    
+    printf("Enter a number : ");
+    scanf("%d",&n);
+    for(int i = 1; i <= n; i++){
+        printf("%d \n",i);
+    }
+}
+
+
+
+
+Program 4: To test Increment Operators
+
+
+#include <stdio.h>
+
+int main(){
+    int i=1;
+    printf("%d \n",i); //Original Value
+    printf("%d \n",i++); //Post Increment
+    printf("%d \n",i); //New Value
+    
+    int j=1;
+    printf("%d \n",j); //Original Value
+    printf("%d \n",++j); //Pre Increment
+    printf("%d \n",j); //New Value
+    
+    return 0;
+}
+
+
+
+
+Program 5: To test Decrement Operators
+
+
+#include <stdio.h>
+
+int main(){
+    int i = 1;
+    printf("%d \n",i); //Original Value
+    printf("%d \n",i--); //Post Decrement
+    printf("%d \n",i); //New Value
+    
+    int j = 1;
+    printf("%d \n",j); //Original Value
+    printf("%d \n",--j); //Pre Decrement
+    printf("%d \n",j); //New Value
+}
+
+
+
+
+Program 6: To print n numbers (using while loop)
+
+
+#include <stdio.h>
+
+int main(){
+    int n;
+    
+    printf("Enter a number : ");
+    scanf("%d",&n);
+    
+    int i=0;
+    while(i<=n){
+        printf("%d \n",i);
+        i++;
+    }
+    return 0;
+}
+
+
+
+
+Program 7: To print n numbers (using for loop)
+
+
+#include <stdio.h>
+
+int main(){
+    int n;
+    printf("Enter a number : ");
+    scanf("%d",&n);
+    
+    for(int i=0;i<=n;i++){
+        printf("%d \n",i);
+    }
+    return 0;
+}
+
+
+
+
+Program 8: To print n numbers (using do while loop)
+
+
+#include <stdio.h>
+
+int main(){
+    int n;
+    
+    printf("Enter a number : ");
+    scanf("%d",&n);
+    
+    int i=0;
+    do{
+        printf("%d \n",i);
+        i++;
+    } while (i<=n);
+    return 0;
+}
+
+
+
+
+Program 9: To print the sum of n natural numbers using for loop
+
+
+#include <stdio.h>
+
+int main(){
+    int n;
+    int sum = 0;
+    
+    printf("Enter a number : ");
+    scanf("%d",&n);
+    
+    for(int i=0;i<=n;i++){
+        sum = sum + i;
+    }
+    printf("Sum of numbers upto %d is %d",n,sum);
+}
+
+
+
+
+Program 10: To print the sum of n natural numbers using a while loop
+
+
+#include <stdio.h>
+
+int main(){
+    int n;
+    
+    printf("Enter a number : ");
+    scanf("%d",&n);
+    
+    int i = 0;
+    int sum = 0;
+    while(i<=n){
+        sum = sum + i;
+        i++;
+    }
+    printf("Sum of numbers upto %d is %d",n,sum);
+}
+
+
+
+
+Program 11: To print the sum of n natural numbers using do while loop
+
+
+#include <stdio.h>
+
+int main(){
+    int n;
+    printf("Enter a number : ");
+    scanf("%d",&n);
+    
+    int sum = 0;
+    int i = 0;
+    
+    do{
+        sum = sum + i;
+        i++;
+    } while (i<=n);
+    
+    printf("Sum of numbers upto %d is %d",n,sum);
+}
+
+
+
+
+Program 12: To print n numbers and also the numbers in reverse
+
+
+#include <stdio.h>
+
+int main(){
+    int n;
+    
+    printf("Enter a number : ");
+    scanf("%d",&n);
+    
+    int sum = 0;
+    for(int i=1,j=n;i<=n,j>=1;i++,j--){
+        sum = sum + i;
+        printf("%d \n",i);
+    }
+    printf("Sum of numbers upto %d is %d",n,sum);
+}
+
+
+
+
+Program 13: To print the table of a number
+
+
+#include <stdio.h>
+
+int main(){
+    int n;
+    
+    printf("Enter a number : ");
+    scanf("%d",&n);
+    
+    for(int i=1;i<=20;i++){
+        printf("%d * %d = %d \n",n,i,n*i);
+    }
+}
+
+
+
+
+Program 14: Testing break statement
+
+
+#include <stdio.h>
+
+int main(){
+    for(int i=0;i<=5;i++){
+        if(i==3){
+            break;
+        }
+        printf("%d \n",i);
+    }
+    printf("End");
+    return 0;
+}
+
+
+
+
+Program 15: Take input from user and stop when they enter odd
+
+
+#include <stdio.h>
+
+int main(){
+    int n;
+    do {
+    printf("Enter a number : ");
+    scanf("%d",&n);
+    
+    printf("%d \n",n);
+    
+    if(n%2==1){
+        break;
+    }
+        
+    } while (1);
+    printf("Thank You");
+}
+
+
+
+
+Program 16: Print all numbers from 1 to 10, except 6
+
+
+#include <stdio.h>
+
+int main(){
+    for(int i=1;i<=10;i++){
+        if(i==6){
+            continue;
+        }
+        printf("%d \n",i);
+    }
+    return 0;
+}
+
+
+
+
+Program 17: Print all odd numbers from 5 to 50
+
+
+#include <stdio.h>
+
+int main(){
+    for(int i=5;i<=50;i++){
+        if(i%2 == 0){
+            continue;
+        }
+        printf("%d \n",i);
+    }
+    return 0;
+}
