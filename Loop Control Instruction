@@ -333,3 +333,44 @@ int main(){
     }
     return 0;
 }
+
+
+
+
+Program 18: To print the factorial of a number
+
+
+#include <stdio.h>
+
+int main(){
+    int n;
+    int factorial = 1;
+    
+    printf("Enter a value : ");
+    scanf("%d",&n);
+    
+    for(int i=1;i<=n;i++){
+        factorial = factorial * i;
+    }
+    printf("Factorial of %d is %d",n,factorial);
+}
+
+
+
+
+Program 19: To print the table of a number in reverse order
+
+
+#include <stdio.h>
+
+int main(){
+    int n;
+    
+    printf("Enter a number : ");
+    scanf("%d",&n);
+    
+    for(int i=20;i>=1;i--){
+        printf("%d * %d = %d \n",n,i,n*i);
+    }
+    return 0;
+}
