@@ -1,0 +1,56 @@
+Program 1: Program to test function calling
+
+
+#include <stdio.h>
+
+//Function Prototype
+void printhello();
+void printbye();
+
+int main (){
+    printhello(); //Function Calling
+    printbye(); //FUnction Calling
+    return 0;
+}
+
+//Fucntion Definition
+void printhello(){
+    printf("Hello! \n");
+}
+
+void printbye(){
+    printf("Good Bye! \n");
+}
+
+
+
+Program 2: Take input from user. Print Namaste if they are Indian or Bonjour if they are French
+
+
+#include <stdio.h>
+
+void printNamaste();
+void printBonjour();
+
+int main(){
+    char x;
+    
+    printf("Enter I if you are Indian and F if you are french : ");
+    scanf("%c",&x);
+    
+    if(x=='I'){
+        printNamaste();
+    } else if(x=='F'){
+        printBonjour();
+    } else {
+        printf("Please enter a valid letter! \n");
+    }
+}
+
+void printNamaste(){
+    printf("Namaste \n");
+}
+
+void printBonjour(){
+    printf("Bonjour \n");
+}
