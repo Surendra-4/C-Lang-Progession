@@ -13,7 +13,7 @@ int main (){
     return 0;
 }
 
-//Fucntion Definition
+//Function Definition
 void printhello(){
     printf("Hello! \n");
 }
@@ -24,7 +24,7 @@ void printbye(){
 
 
 
-Program 2: Take input from user. Print Namaste if they are Indian or Bonjour if they are French
+Program 2: Take input from the user. Print Namaste if they are Indian and Bonjour if they are French
 
 
 #include <stdio.h>
@@ -53,4 +53,222 @@ void printNamaste(){
 
 void printBonjour(){
     printf("Bonjour \n");
+}
+
+
+
+
+Program 3: Function calling using parameters for sum
+
+
+#include <stdio.h>
+
+int sum (int x,int y);
+
+int main(){
+    int a,b;
+    
+    printf("Enter the first number : ");
+    scanf("%d",&a);
+    
+    printf("Enter the second number : ");
+    scanf("%d",&b);
+    
+    int s=sum(a,b);
+    printf("Sum is %d",s);
+    
+    return 0;
+}
+
+int sum(int x, int y){
+    return x+y;
+}
+
+
+
+
+Program 4: To print a table by function passing
+
+
+#include <stdio.h>
+
+void printTable(int n);
+
+int main(){
+    int n;
+    printf("Enter a number : ");
+    scanf("%d",&n);
+    
+    printTable(n);
+    return 0;
+}
+
+void printTable(int n){
+    for(int i=0;i<=20;i++){
+        printf("%d * %d = %d \n",n,i,n*i);
+    }
+}
+
+
+
+
+Program 5: To test changes in arguments and parameters
+
+
+#include <stdio.h>
+
+void calculateValue(float value);
+
+int main(){
+    float value = 100.00;
+    calculateValue(value);
+    
+    printf("Original value is %f \n",value);
+    return 0;
+}
+
+void calculateValue(float value){
+    value = value + (0.18*value);
+    printf("Value after GST is %f \n",value);
+}
+
+
+
+
+Program 6: Functions to find areas of square, circle and rectangle
+
+
+#include <stdio.h>
+
+float areaSquare(float side);
+float areaCircle(float rad);
+float areaRectangle(float a,float b);
+
+int main(){
+    float a = 6;
+    float b = 12;
+    
+    printf("Area is %f",areaRectangle(a,b));
+    return 0;
+}
+
+float areaSquare(float side){
+    return side*side;
+}
+
+float areaCircle(float rad){
+    return 3.14*rad*rad;
+}
+
+float areaRectangle(float a,float b){
+    return a*b;
+}
+
+
+
+
+Program 7:
+
+
+#include <stdio.h>
+
+void printHW(int count);
+
+int main(){
+    int n;
+    
+    printf("Enter a number : ");
+    scanf("%d",&n);
+    
+    printHW(n);
+    return 0;
+}
+
+void printHW(int count){
+    if(count == 0){
+        return;
+    }
+    printf("Hello World \n");
+    printHW(count-1);
+}
+
+
+
+
+Program 8: Program to print n natural numbers using recursion
+
+
+#include <stdio.h>
+
+int sum(int n);
+
+int main(){
+    int n;
+    printf("Enter a number : ");
+    scanf("%d",&n);
+    
+    printf("Sum is %d",sum(n));
+    return 0;
+}
+
+int sum(int n){
+    if(n==1){
+        return 1;
+    }
+    
+    int sm1 = sum(n-1);
+    int sum = sm1 + n;
+    return sum;
+}
+
+
+
+
+Program 9: Program to print the factorial of a number
+
+
+#include <stdio.h>
+
+int fact(int n);
+
+int main(){
+    int n;
+    printf("Enter a number : ");
+    scanf("%d",&n);
+    
+    printf("Factorial of %d is %d",n,fact(n));
+    return 0;
+}
+
+int fact(int n){
+    if(n==1){
+        return 1;
+    }
+    int factm1 = fact(n-1);
+    int fact = factm1 * n;
+    return fact;
+}
+
+
+
+
+Program 10: To convert Celsius to Fahrenheit
+
+
+#include <stdio.h>
+
+float conTemp(float value);
+
+int main(){
+    float value;
+    printf("Enter the temperature in Celsius : ");
+    scanf("%f",&value);
+    
+    printf("Temperature in Fahrenheit is %f",conTemp(value));
+    return 0;
+}
+
+float conTemp(float value){
+    float far = value * (9.0/5.0) + 32;
+    return far;
 }
